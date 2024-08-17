@@ -3,7 +3,7 @@ import { userLogin } from "./auth";
 import { useNavigate } from "react-router-dom";
 export const Login=()=>{
 
-    const {loginDispatch,email,password,token}=useLogin();
+    const {loginDispatch,email,password}=useLogin();
     const navigate=useNavigate();
     const onFormSubmit=async (e)=>{
         e.preventDefault();
